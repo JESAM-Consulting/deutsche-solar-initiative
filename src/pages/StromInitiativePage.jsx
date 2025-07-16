@@ -74,6 +74,8 @@ export default function StromInitiativePage() {
 <header className="bg-yellow-400 text-black rounded-b-2xl shadow-md px-6 py-4">
   <div className="max-w-3xl mx-auto flex items-center justify-between">
     {/* Logo & Claim */}
+               <div className="max-w-3xl mx-auto flex items-center justify-between">
+    {/* Logo & Claim */}
                <div>
               <img src="/logo.svg" alt="Logo" className="h-16 mb-2" />
               <p className="mt-2 text-lg">Einfach. Fair. Digital.</p>
