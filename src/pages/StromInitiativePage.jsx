@@ -71,32 +71,60 @@ export default function StromInitiativePage() {
         </>
       )}
 
-      <header className="p-6 bg-yellow-400 text-black rounded-b-2xl shadow-md">
-        <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center justify-between">
-          <div className="text-left w-full flex justify-between items-center">
-            <div>
-              <img src="/logo.svg" alt="Logo" className="h-16 mb-2" />
-              <p className="mt-2 text-lg">Einfach. Fair. Digital.</p>
-            </div>
-            <button
-              className="md:hidden text-3xl font-bold"
-              onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Menü öffnen"
-            >
-              ☰
-            </button>
-          </div>
+<header className="bg-yellow-400 text-black rounded-b-2xl shadow-md px-6 py-4">
+  <div className="max-w-3xl mx-auto flex items-center justify-between">
+    {/* Logo & Claim */}
+    <div className="flex items-center space-x-4">
+      <img src="/logo.svg" alt="Logo" className="h-12" />
+      <p className="hidden sm:block text-lg font-medium">Einfach. Fair. Digital.</p>
+    </div>
 
-          <nav className={`${menuOpen ? "block" : "hidden"} mt-4 md:mt-0 md:flex space-y-2 md:space-y-0 md:space-x-6 font-semibold text-sm w-full md:w-auto`}>
-            <Link to="/" className={`hover:underline ${location.pathname === "/" ? "underline" : ""}`} onClick={() => setMenuOpen(false)}>
-              Privatkunden
-            </Link>
-            <Link to="/gewerbe" className={`hover:underline ${location.pathname === "/gewerbe" ? "underline" : ""}`} onClick={() => setMenuOpen(false)}>
-              Gewerbekunden
-            </Link>
-          </nav>
-        </div>
-      </header>
+    {/* Hamburger Icon */}
+    <button
+      className="md:hidden text-3xl font-bold focus:outline-none transition duration-200"
+      onClick={() => setMenuOpen(!menuOpen)}
+      aria-label="Menü öffnen oder schließen"
+    >
+      {menuOpen ? "✕" : "☰"}
+    </button>
+
+    {/* Desktop Nav */}
+    <nav className="hidden md:flex space-x-6 font-semibold text-sm">
+      <Link
+        to="/"
+        className={`hover:underline ${location.pathname === "/" ? "underline" : ""}`}
+      >
+        Privatkunden
+      </Link>
+      <Link
+        to="/gewerbe"
+        className={`hover:underline ${location.pathname === "/gewerbe" ? "underline" : ""}`}
+      >
+        Gewerbekunden
+      </Link>
+    </nav>
+  </div>
+
+  {/* Mobile Nav */}
+  {menuOpen && (
+    <div className="md:hidden mt-4 flex flex-col space-y-4 font-semibold text-sm animate-fade-in">
+      <Link
+        to="/"
+        className={`hover:underline ${location.pathname === "/" ? "underline" : ""}`}
+        onClick={() => setMenuOpen(false)}
+      >
+        Privatkunden
+      </Link>
+      <Link
+        to="/gewerbe"
+        className={`hover:underline ${location.pathname === "/gewerbe" ? "underline" : ""}`}
+        onClick={() => setMenuOpen(false)}
+      >
+        Gewerbekunden
+      </Link>
+    </div>
+  )}
+</header>
 
       <section className="max-w-3xl mx-auto p-6 animate-fade-in">
         <h2 className="text-2xl font-bold text-yellow-400 mb-4 animate-fade-in">Über uns</h2>
