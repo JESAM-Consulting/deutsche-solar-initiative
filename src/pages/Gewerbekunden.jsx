@@ -75,10 +75,10 @@ export default function StromInitiativePage() {
       <header className="bg-yellow-400 text-black rounded-b-2xl shadow-md px-6 py-4">
   <div className="max-w-3xl mx-auto flex items-center justify-between">
     {/* Logo & Claim */}
-    <div className="flex items-center space-x-4">
-      <img src="/logo.svg" alt="Logo" className="h-12" />
-      <p className="hidden sm:block text-lg font-medium">Einfach. Fair. Digital.</p>
-    </div>
+               <div>
+              <img src="/logo.svg" alt="Logo" className="h-16 mb-2" />
+              <p className="mt-2 text-lg">Einfach. Fair. Digital.</p>
+            </div>
 
     {/* Hamburger Icon */}
     <button
