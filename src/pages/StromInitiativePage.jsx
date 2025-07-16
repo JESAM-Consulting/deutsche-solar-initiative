@@ -70,7 +70,6 @@ export default function StromInitiativePage() {
           </a>
         </>
       )}
-
 <header className="bg-yellow-400 text-black rounded-b-2xl shadow-md px-6 py-4">
   <div className="max-w-3xl mx-auto flex items-center justify-between">
     {/* Logo & Claim */}
@@ -125,7 +124,6 @@ export default function StromInitiativePage() {
     </div>
   )}
 </header>
-
       <section className="max-w-3xl mx-auto p-6 animate-fade-in">
         <h2 className="text-2xl font-bold text-yellow-400 mb-4 animate-fade-in">Über uns</h2>
         <p className="mb-6 animate-fade-in">
