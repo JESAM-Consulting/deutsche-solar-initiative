@@ -131,7 +131,7 @@ export default function StromInitiativePage() {
         </p>
         <h2 className="text-2xl font-bold text-yellow-400 mb-4 animate-fade-in">Vorteile der Deutschen Strom Initiative</h2>
         <p className="mb-6 animate-fade-in">
-          Wir übernehmen für dich den gesamten Prozess: Von der Tarifrecherche über die Kündigung deines alten Anbieters bis hin zur Anmeldung beim neuen Anbieter. Dabei berücksichtigen wir deine individuellen Wünsche, wie z. B. Ökostrom, kurze Vertragslaufzeiten oder Preisgarantien. Du erhältst von uns ausschließlich transparente Angebote ohne versteckte Kosten – und das komplett kostenfrei.
+          Wir übernehmen für dich den gesamten Prozess: Von der Tarifrecherche über die Kündigung deines alten Anbieters bis hin zur Anmeldung beim neuen Anbieter. Dabei berücksichtigen wir deine individuellen Wünsche, wie z. B. Ökostrom, kurze Vertragslaufzeiten oder Preisgarantien. <br />Du erhältst von uns ausschließlich transparente Angebote ohne versteckte Kosten – und das komplett kostenfrei.
         </p>
         <p className="mb-6 animate-fade-in">
           Darüber hinaus setzen wir uns aktiv für die Energiewende ein. Indem wir dir helfen, zu einem günstigeren und nachhaltigeren Anbieter zu wechseln, leisten wir gemeinsam einen Beitrag für Umwelt und Zukunft. Unser Service spart dir nicht nur Zeit und Geld, sondern sorgt auch dafür, dass du jederzeit bestens versorgt bist – ganz ohne Risiko.
